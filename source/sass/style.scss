@@ -1,3 +1,8 @@
-h1 {
-  color: rgb(19, 235, 217);
-}
+@import "common-styles/_fonts.scss";
+@import "common-styles/_helpers.scss";
+@import "common-styles/_normalize.scss";
+@import "common-styles/_scaffolding.scss";
+@import "common-styles/_mixins.scss";
+@import "block-styles/_header.scss";
+@import "block-styles/_footer.scss";
+@import "block-styles/_main.scss";
