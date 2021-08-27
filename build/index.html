@@ -5,20 +5,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jewellery</title>
+  <title>Jewellery store</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="header">
-    hello
+<div class="centering-container">
+<div class="header__header-content">
+
+
+  <button class="header__burger">
+    <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+    </svg>
+  </button>
+
+
+  <form class="header__search header__search--menu" action="#" method="post">
+    <label for="search">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+      </svg>
+    </label>
+    <input type="search" name="search" id="search" placeholder="Type here to search">
+  </form>
+
+
+  <a class="header__logo header__logo--menu">
+    <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+    </svg>
+  </a>
+
+  <div class="header__user-bar user-bar">
+    <a class="user-bar__item user-bar__login-link user-bar__login-link-js" href="login.html">Login</a>
+
+    <a class="user-bar__item user-bar__cart-link user-bar__--menu" href="#">
+      <div>
+        Cart&nbsp;
+        <span class="user-bar__cart-link-counter">0</span>
+      </div>
+      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+      </svg>
+    </a>
+  </div>
+
+</div>
+<nav class="header__navigation navigation navigation--menu">
+  <ul class="navigation__list">
+    <li class="navigation__list-item">
+      <a href="#new">What’s new</a>
+    </li>
+    <li class="navigation__list-item">
+      <a href="catalog.html">Chokers</a>
+    </li>
+    <li class="navigation__list-item">
+      <a href="catalog.html">Necklaces</a>
+    </li>
+    <li class="navigation__list-item">
+      <a href="catalog.html">Rings</a>
+    </li>
+    <li class="navigation__list-item">
+      <a href="catalog.html">Earrings</a>
+    </li>
+  </ul>
+
+  <ul class="navigation__expanded-list">
+    <li class="navigation__expanded-list-item">
+      <a href="#">About CH</a>
+    </li>
+    <li class="navigation__expanded-list-item">
+      <a href="#">Stores&nbsp;&#38;&nbsp;Hours</a>
+    </li>
+    <li class="navigation__expanded-list-item">
+      <a href="#">Contact Us</a>
+    </li>
+    <li class="navigation__expanded-list-item navigation__expanded-list-item--login login-link-js">
+      <a href="login.html" target="_blank">Login</a>
+    </li>
+  </ul>
+</nav>
+
+</div>
   </header>
   <main class="main">
-    hellohello
-    <h1>Gramond</h1>
+
   </main>
   <footer class="footer">
-    hello
+
   </footer>
   <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>

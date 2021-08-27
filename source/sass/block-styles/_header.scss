@@ -1,3 +1,117 @@
 .header {
   outline: 3px dotted rgb(187, 84, 228);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #f6f5f4;
+    top: 115px;
+  }
+}
+
+.header__header-content {
+  display: flex;
+  justify-content: space-between;
+  // padding-top: 30px;
+  // padding-bottom: 10px;
+  // background-color: rgb(149, 221, 78);
+  min-height: 115px;
+  padding: 10px 0 0 0;
+
+  @media (max-width: 1023px) {
+    min-height: 125px;
+    padding: 0;
+  }
+
+  @media (max-width: 1023px) {
+    min-height: 90px;
+    // padding: 0;
+  }
+}
+
+.header__burger {
+  @include hover-focus-activity();
+  display: none;
+  width: 25px;
+  height: 18px;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  @media (max-width: 1023px) {
+    display: flex;
+    // background-color: rgb(126, 56, 193);
+    align-self: center;
+  }
+}
+
+.header__burger--js svg {
+  @media (max-width: 1023px) {
+    display: block;
+    width: 25px;
+    height: 18px;
+
+    stroke: rgb(240, 215, 75);
+  }
+}
+
+.header__search {
+  // outline: 2px dotted rgb(205, 157, 181);
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: -20px auto 0 0;
+  align-self: center;
+  width: 100%;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.header__search label {
+  position: absolute;
+  // top: 50%;
+  left: 0;
+}
+
+.header__search input {
+  @include hover-focus-activity();
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  // align-items: center;
+  padding: 12px 10px 12px 28px;
+  border: none;
+}
+
+.header__search input::placeholder {
+  // font-weight: 500;
+  color: #9b9997;
+}
+
+.header__logo {
+  @include hover-focus-activity();
+  // background-color: rgb(172, 158, 154);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.header__user-bar {
+  // margin: 0 0 0 auto;
+  width: 100%;
+
+  @media (max-width: 1023px) {
+    width: auto;
+  }
 }
