@@ -1,0 +1,48 @@
+.modal-menu {
+  width: 100%;
+  background-color: #a87b62;
+  padding: 28px 45px 35px 45px;
+
+  @media (max-width: 727px) {
+    padding: 20px 14px 0 14px;
+  }
+}
+
+.modal-menu__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 27px;
+
+  @media (max-width: 727px) {
+    padding-bottom: 17px;
+  }
+}
+
+.modal-menu__close-button {
+  @include hover-focus-activity();
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+.modal-menu__logo svg {
+  color: #ffffff;
+
+  @media (max-width: 727px) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.modal-menu__cart {
+  @include hover-focus-activity();
+  margin: 26px 0 0 15px;
+
+  @media (max-width: 727px) {
+    margin: 17px 0 0 15px;
+  }
+}
+
+.modal-menu__cart svg {
+  color: #ffffff;
+}
