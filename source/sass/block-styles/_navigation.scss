@@ -67,3 +67,7 @@
     margin-top: 15px;
   }
 }
+
+.navigation a {
+  @include hover-focus-activity();
+}

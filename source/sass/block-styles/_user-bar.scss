@@ -15,13 +15,15 @@
 }
 
 .user-bar__login-link {
+  @include hover-focus-activity();
+
   @media (max-width: 1023px) {
     display: none;
   }
 }
 
 .user-bar__cart-link {
-  // background-color: rgb(223, 165, 194);
+  @include hover-focus-activity();
   display: flex;
   align-items: center;
   margin: 0 0 0 40px;
