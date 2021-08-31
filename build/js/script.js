@@ -1,12 +1,14 @@
 'use strict';
 var headerBurger = document.querySelector('.header__burger');
 var headerNavigation = document.querySelector('.navigation');
+var headerSearch = document.querySelector('.search');
 // var headerToggle = document.querySelector('.page-header__toggle');
 
 
 var addBurger = function () {
   headerBurger.classList.add('header__burger--js');
   headerNavigation.classList.add('navigation--js');
+  headerSearch.classList.add('search--js');
 };
 
 addBurger();
