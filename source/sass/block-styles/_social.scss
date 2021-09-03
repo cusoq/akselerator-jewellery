@@ -7,7 +7,6 @@
   margin-left: auto;
 
   @media (max-width: 1023px) {
-    // flex-basis: 100%;
     margin-left: 70px;
   }
 
@@ -29,6 +28,7 @@
 }
 
 .social__item a {
+  @include hover-focus-activity();
   display: flex;
 }
 

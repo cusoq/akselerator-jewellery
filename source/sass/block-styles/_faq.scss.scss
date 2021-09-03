@@ -105,6 +105,7 @@
 }
 
 .faq__btn {
+  @include hover-focus-activity();
   display: flex;
   justify-content: space-between;
   width: 100%;

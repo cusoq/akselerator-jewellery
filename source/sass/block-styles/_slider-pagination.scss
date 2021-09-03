@@ -1,0 +1,44 @@
+.slider-pagination {
+  position: absolute;
+  bottom: -10px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: 1023px) {
+    bottom: 0;
+  }
+
+  @media (max-width: 727px) {
+    display: none;
+  }
+}
+
+.slider-pagination span {
+  margin: 0 6px;
+
+  @media (max-width: 1023px) {
+    margin: 0 10px;
+  }
+}
+
+.slider-mobile-pagination {
+  display: none;
+  color: #1d1613;
+  font-weight: 500;
+  font-size: 16px;
+
+  @media (max-width: 727px) {
+    position: absolute;
+    right: 0;
+    bottom: 71px;
+    display: block;
+    left: 0;
+    text-align: center;
+
+    @media (max-width: 727px) {
+      bottom: -5px;
+    }
+  }
+}

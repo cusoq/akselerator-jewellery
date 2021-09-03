@@ -43,6 +43,7 @@
 }
 
 .blog a {
+  @include hover-focus-activity();
   color: #1d1613;
   position: relative;
   border-bottom: 1px solid #a87b62;

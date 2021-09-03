@@ -1,2 +1,3 @@
 source/sass/common-styles/_normalize.scss
+source/sass/vendor/*.scss
 source/js/vendor.js

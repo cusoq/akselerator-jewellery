@@ -1,7 +1,6 @@
 .about-us {
   display: flex;
   justify-content: space-between;
-  // padding: 98px 0 0 0;
   flex-basis: 31%;
 
   @media (max-width: 1023px) {
@@ -28,4 +27,8 @@
 
 .about-us__item {
   margin-bottom: 22px;
+}
+
+.about-us__item a {
+  @include hover-focus-activity();
 }
