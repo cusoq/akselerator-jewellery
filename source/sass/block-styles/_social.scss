@@ -18,7 +18,7 @@
 }
 
 .social__item {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .social__item span {
@@ -44,6 +44,11 @@
 
 .social__icon svg {
   display: flex;
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
+
+  @media (max-width: 727px) {
+    width: 22px;
+    height: 22px;
+  }
 }

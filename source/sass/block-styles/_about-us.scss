@@ -26,7 +26,11 @@
 }
 
 .about-us__item {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
+
+  @media (max-width: 727px) {
+    margin-bottom: 20px;
+  }
 }
 
 .about-us__item a {

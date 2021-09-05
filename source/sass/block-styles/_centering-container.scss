@@ -12,3 +12,18 @@
     padding: 0 15px;
   }
 }
+
+.centering-container--catalog {
+  display: flex;
+  padding: 0 0 0 15px;
+  justify-content: space-between;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  @media (max-width: 727px) {
+    padding: 0;
+  }
+}

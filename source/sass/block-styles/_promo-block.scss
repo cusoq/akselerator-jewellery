@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  padding: 0 35px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/desk-intro-bg@2x.jpg");
@@ -32,10 +33,36 @@
   }
 }
 
+.promo-block--catalog {
+  min-height: 260px;
+  background-image: url("../img/desk-catalog-intro-bg.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/desk-catalog-intro-bg@2x.jpg");
+  }
+
+  @media (max-width: 1023px) {
+    background-image: url("../img/tablet-catalog-intro-bg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-catalog-intro-bg@2x.jpg");
+    }
+  }
+
+  @media (max-width: 727px) {
+    background-image: url("../img/mobile-catalog-intro-bg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile-catalog-intro-bg@2x.jpg");
+    }
+  }
+}
+
 .promo-block h2 {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.03em;
   font-size: 45px;
   margin: 5px 0 0 0;
@@ -50,6 +77,22 @@
   }
 }
 
+.promo-block--catalog h2 {
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0;
+
+  @media (max-width: 1023px) {
+    padding-right: 0;
+    margin: 0;
+  }
+
+  // @media (max-width: 727px) {
+  //   font-size: 38px;
+  //   padding-right: 0;
+  // }
+}
+
 .promo-block p {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   color: #ffffff;
@@ -58,13 +101,32 @@
   font-size: 38px;
   text-transform: lowercase;
   margin: 0;
+  text-align: center;
 
   @media (max-width: 1023px) {
-    padding-right: 15px;
+    // padding-right: 15px;
   }
 
   @media (max-width: 727px) {
     font-size: 34px;
-    padding-right: 0;
+    // padding-right: 0;
   }
+}
+
+.promo-block--catalog p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  text-transform: inherit;
+  margin: 0;
+  text-align: center;
+
+  // @media (max-width: 1023px) {
+  //   padding-right: 15px;
+  // }
+
+  // @media (max-width: 727px) {
+  //   font-size: 34px;
+  //   padding-right: 0;
+  // }
 }
