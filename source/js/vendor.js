@@ -209,7 +209,7 @@ const myModal = new HystModal({
             catchFocus: true,
 });
 
-const myModal2 = new HystModal({
+const filterModal = new HystModal({
   backscroll: true,
             linkAttributeName: 'data-hystmodal',
             closeOnOverlay: true,
@@ -5097,5 +5097,73 @@ const myModal2 = new HystModal({
     let accordionToggles = accordionBlock.querySelectorAll('.' + ACCORDION_TOGGLE_CLASS);
 
     initAccordion(accordionQuestions, accordionAnswers, accordionToggles);
+  }
+})();
+
+(function () {
+  let accordionBlock = document.querySelector('.filter__form');
+
+  const FIELD_CLASS = 'filter__field';
+  const TOGGLE_CLASS = 'filter__field-toggle';
+  const BUTTON_ACTIVE_CLASS = 'filter__field-toggle--active';
+  const FIELD_CLOSED_CLASS = 'filter__field--closed';
+
+  if (accordionBlock) {
+    let accordionToggles = accordionBlock.querySelectorAll('.' + TOGGLE_CLASS);
+    let accordionFields = accordionBlock.querySelectorAll('.' + FIELD_CLASS);
+
+    if (accordionToggles && accordionFields) {
+      initAccordion(accordionFields, accordionToggles);
+    }
+  }
+
+  function initAccordion(fields, toggles) {
+    fields.forEach((elem) => {
+      elem.classList.toggle(FIELD_CLOSED_CLASS);
+    });
+
+    toggles.forEach((elem) => {
+      elem.addEventListener('click', toggleClickHandler);
+    });
+  }
+
+  function toggleClickHandler() {
+    let currentField = this.nextElementSibling;
+    currentField.classList.toggle(FIELD_CLOSED_CLASS);
+    this.classList.toggle(BUTTON_ACTIVE_CLASS);
+  }
+})();
+
+(function () {
+  let accordionBlock = document.querySelector('.filter__form--modal');
+
+  const FIELD_CLASS = 'filter__field';
+  const TOGGLE_CLASS = 'filter__field-toggle';
+  const BUTTON_ACTIVE_CLASS = 'filter__field-toggle--active';
+  const FIELD_CLOSED_CLASS = 'filter__field--closed';
+
+  if (accordionBlock) {
+    let accordionToggles = accordionBlock.querySelectorAll('.' + TOGGLE_CLASS);
+    let accordionFields = accordionBlock.querySelectorAll('.' + FIELD_CLASS);
+
+    if (accordionToggles && accordionFields) {
+      initAccordion(accordionFields, accordionToggles);
+    }
+  }
+
+  function initAccordion(fields, toggles) {
+    fields.forEach((elem) => {
+      elem.classList.toggle(FIELD_CLOSED_CLASS);
+    });
+
+    toggles.forEach((elem) => {
+      elem.addEventListener('click', toggleClickHandler);
+    });
+  }
+
+  function toggleClickHandler() {
+    let currentField = this.nextElementSibling;
+    currentField.classList.toggle(FIELD_CLOSED_CLASS);
+    this.classList.toggle(BUTTON_ACTIVE_CLASS);
   }
 })();

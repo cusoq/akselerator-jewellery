@@ -1,0 +1,19 @@
+.modal-filter__close-button {
+  @include hover-focus-activity();
+  position: absolute;
+  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -16px;
+  top: 15px;
+}
+
+.hystmodal__wrap--filter {
+  align-items: flex-start;
+  background-color: #e5e5e5;
+}

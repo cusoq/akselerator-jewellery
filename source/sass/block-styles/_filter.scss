@@ -1,0 +1,153 @@
+.filter__field-wrapper {
+  border: none;
+  background-color: #ffffff;
+  outline: 1px solid #a87b62;
+  padding: 5px 15px 0 15px;
+
+  @media (max-width: 1023px) {
+    padding: 17px 38px 10px 15px;
+  }
+
+  @media (max-width: 727px) {
+    padding: 6px 15px 0 15px;
+  }
+}
+
+.filter__field {
+  padding-bottom: 18px;
+}
+
+.filter__field--closed {
+  display: none;
+}
+
+.filter__field-toggle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #1d1613;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 57px;
+  border: none;
+  background-color: transparent;
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
+  }
+}
+
+.filter__field-toggle svg {
+  color: #a87b62;
+  width: 15px;
+  height: 8px;
+
+  @media (max-width: 1023px) {
+    width: 23px;
+    height: 12px;
+  }
+}
+
+.filter__field-toggle--active svg {
+  transform: rotate(180deg);
+}
+
+.filter__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__button {
+  @include hover-focus-activity();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 67px;
+  border: none;
+
+  &--submit {
+    color: #ffffff;
+    background-color: #a87b62;
+    margin: 35px 0 25px 0;
+
+    @media (max-width: 727px) {
+      width: calc(100% - 75px);
+      margin: 30px 0 20px 0;
+    }
+  }
+
+  &--reset {
+    background-color: #ffffff;
+    color: #1d1613;
+    box-shadow: 0 0 0 2px #a87b62 inset;
+  }
+
+  @media (max-width: 1023px) {
+    width: calc(100% - 75px);
+    margin-left: 28px;
+    margin-right: auto;
+  }
+
+  @media (max-width: 727px) {
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.filter__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px 40px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 5px;
+  }
+}
+
+.filter__input-description {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #1d1613;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    border: 2px solid #a87b62;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    left: 15px;
+
+    @media (max-width: 1023px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 16px;
+  }
+}
+
+.filter__field input[type="checkbox"]:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.filter__field input[type="checkbox"]:hover + .filter__input-description {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.filter__field input[type="checkbox"]:checked + .filter__input-description::before {
+  background-color: #a87b62;
+}
