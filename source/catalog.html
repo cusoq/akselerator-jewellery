@@ -7,6 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jewellery store catalog</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramond-italic-webfont.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramond-semibold-webfont.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramond-bold-webfont.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <meta name="description" content="Jewellery store.">
 </head>
 
 <body>
@@ -39,7 +49,8 @@
         </a>
 
         <div class="header__user-bar user-bar">
-          <a class="user-bar__item user-bar__login-link user-bar__login-link-js" href="login.html">Login</a>
+          <a class="user-bar__item user-bar__login-link user-bar__login-link-js" href="login.html"
+            data-hystmodal="#loginModal">Login</a>
 
           <a class="user-bar__item user-bar__cart-link" href="#" data-hystmodal="#myModal2">
             <div>
@@ -210,20 +221,20 @@
                   <div class="price-slider__pin">
 
                     <!-- <div class="price-slider__input-wrapper"> -->
-                      <div class="price-slider__input-container price-slider__input-container--min">
+                    <div class="price-slider__input-container price-slider__input-container--min">
 
-                        <label class="price-slider__input-description" for="low-value">&#36;
-                        </label>
-                        <input type="text" name="low-price" id="low-value" value="55">
-                      </div>
+                      <label class="price-slider__input-description" for="low-value">&#36;
+                      </label>
+                      <input type="text" name="low-price" id="low-value" value="55">
                     </div>
-                    <div class="price-slider__pin">
+                  </div>
+                  <div class="price-slider__pin">
                     <div class="price-slider__input-container price-slider__input-container--max">
                       <label class="price-slider__input-description" for="top-value">&#36;
                       </label>
                       <input type="text" name="top-price" id="top-value" value="155">
                     </div>
-                  <!-- </div> -->
+                    <!-- </div> -->
 
                   </div>
                 </div>
@@ -284,7 +295,7 @@
                       srcset="img/desk-goods-black-choker-gold-bead@2x.jpg 2x" width="270" height="272"
                       alt="Jewellery item black-choker-gold-bead">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Choker with gold bead</h3>
                   <p>
                     <span>&#36; </span>
                     <span>55</span>
@@ -307,7 +318,7 @@
                       srcset="img/desk-goods-gold-layered-necklace@2x.jpg 2x" width="270" height="272"
                       alt="Jewellery item gold-layered-necklace">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Gold layered necklace</h3>
                   <p>
                     <span>&#36; </span>
                     <span>155</span>
@@ -330,7 +341,7 @@
                       srcset="img/desk-goods-blue-gemstone-pendant@2x.jpg 2x" width="270" height="272"
                       alt="Jewellery item blue-gemstone-pendant">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Blue gemstone pendant</h3>
                   <p>
                     <span>&#36; </span>
                     <span>105</span>
@@ -349,11 +360,10 @@
                       srcset="img/desk-goods-boho-earrings.webp 1x, img/desk-goods-boho-earrings@2x.webp 2x">
 
                     <!-- 1х: 270px; 2x: 540px -->
-                    <img src="img/desk-goods-boho-earrings.jpg"
-                      srcset="img/desk-goods-boho-earrings@2x.jpg 2x" width="270" height="272"
-                      alt="Jewellery item boho-earrings">
+                    <img src="img/desk-goods-boho-earrings.jpg" srcset="img/desk-goods-boho-earrings@2x.jpg 2x"
+                      width="270" height="272" alt="Jewellery item boho-earrings">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Boho earrings</h3>
                   <p>
                     <span>&#36; </span>
                     <span>75</span>
@@ -372,11 +382,10 @@
                       srcset="img/desk-goods-bird-necklace.webp 1x, img/desk-goods-bird-necklace@2x.webp 2x">
 
                     <!-- 1х: 270px; 2x: 540px -->
-                    <img src="img/desk-goods-bird-necklace.jpg"
-                      srcset="img/desk-goods-bird-necklace@2x.jpg 2x" width="270" height="272"
-                      alt="Jewellery item bird-necklace">
+                    <img src="img/desk-goods-bird-necklace.jpg" srcset="img/desk-goods-bird-necklace@2x.jpg 2x"
+                      width="270" height="272" alt="Jewellery item bird-necklace">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Gold bird necklace</h3>
                   <p>
                     <span>&#36; </span>
                     <span>135</span>
@@ -399,7 +408,7 @@
                       srcset="img/desk-goods-black-leather-choker-necklace@2x.jpg 2x" width="270" height="272"
                       alt="Jewellery item black-leather-choker-necklace">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Black leather choker</h3>
                   <p>
                     <span>&#36; </span>
                     <span>85</span>
@@ -422,7 +431,7 @@
                       srcset="img/desk-goods-purple-gemstone-necklace@2x.jpg 2x" width="270" height="272"
                       alt="Jewellery item purple-gemstone-necklace">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Necklace with amethyst</h3>
                   <p>
                     <span>&#36; </span>
                     <span>145</span>
@@ -441,11 +450,10 @@
                       srcset="img/desk-goods-elephant-earrings.webp 1x, img/desk-goods-elephant-earrings@2x.webp 2x">
 
                     <!-- 1х: 270px; 2x: 540px -->
-                    <img src="img/desk-goods-elephant-earrings.jpg"
-                      srcset="img/desk-goods-elephant-earrings@2x.jpg 2x" width="270" height="272"
-                      alt="Jewellery item elephant-earrings">
+                    <img src="img/desk-goods-elephant-earrings.jpg" srcset="img/desk-goods-elephant-earrings@2x.jpg 2x"
+                      width="270" height="272" alt="Jewellery item elephant-earrings">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Elephant earrings</h3>
                   <p>
                     <span>&#36; </span>
                     <span>95</span>
@@ -468,7 +476,7 @@
                       srcset="img/desk-goods-threader-necklace-closeup@2x.jpg 2x" width="270" height="272"
                       alt="Jewellery item threader-necklace-closeup">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Threader necklace</h3>
                   <p>
                     <span>&#36; </span>
                     <span>115</span>
@@ -491,7 +499,7 @@
                       srcset="img/desk-goods-origami-crane-necklace@2x.jpg 2x" width="270" height="272"
                       alt="Jewellery item origami-crane-necklace">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Origami crane necklace</h3>
                   <p>
                     <span>&#36; </span>
                     <span>105</span>
@@ -510,11 +518,10 @@
                       srcset="img/desk-goods-marble-earrings.webp 1x, img/desk-goods-marble-earrings@2x.webp 2x">
 
                     <!-- 1х: 270px; 2x: 540px -->
-                    <img src="img/desk-goods-marble-earrings.jpg"
-                      srcset="img/desk-goods-marble-earrings@2x.jpg 2x" width="270" height="272"
-                      alt="Jewellery item marble-earrings">
+                    <img src="img/desk-goods-marble-earrings.jpg" srcset="img/desk-goods-marble-earrings@2x.jpg 2x"
+                      width="270" height="272" alt="Jewellery item marble-earrings">
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Marble earrings</h3>
                   <p>
                     <span>&#36; </span>
                     <span>95</span>
@@ -939,7 +946,7 @@
               <a href="#">Contact Us</a>
             </li>
             <li class="navigation__expanded-list-item navigation__expanded-list-item--login login-link-js">
-              <a href="login.html" target="_blank">Login</a>
+              <a href="login.html" target="_blank" data-hystmodal="#loginModal">Login</a>
             </li>
           </ul>
         </nav>
@@ -951,12 +958,12 @@
     <div class="hystmodal__wrap hystmodal__wrap--filter">
       <div class="hystmodal__window modal-filter" role="dialog" aria-modal="true">
 
-        <div class="main__filter-block main__filter-block--modal filter">
-        <button data-hystclose class="modal-filter__close-button">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
-          </svg>
-        </button>
+        <div class="filter filter--modal">
+          <button data-hystclose class="modal-filter__close-button">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
           <form class="filter__form filter__form--modal" action="#" method="POST">
 
             <fieldset class="filter__field-wrapper">
@@ -1067,14 +1074,14 @@
                   <div class="price-slider__progress">
                     <div class="price-slider__pin">
 
-                        <div class="price-slider__input-container price-slider__input-container--min">
+                      <div class="price-slider__input-container price-slider__input-container--min">
 
-                          <label class="price-slider__input-description" for="low-value-modal">&#36;
-                          </label>
-                          <input type="text" name="low-price" id="low-value-modal" value="55">
-                        </div>
+                        <label class="price-slider__input-description" for="low-value-modal">&#36;
+                        </label>
+                        <input type="text" name="low-price" id="low-value-modal" value="55">
                       </div>
-                      <div class="price-slider__pin">
+                    </div>
+                    <div class="price-slider__pin">
                       <div class="price-slider__input-container price-slider__input-container--max">
                         <label class="price-slider__input-description" for="top-value-modal">&#36;
                         </label>
@@ -1094,9 +1101,48 @@
             </div>
           </form>
         </div>
+      </div>
     </div>
   </div>
+
+  <div class="hystmodal" id="loginModal" aria-hidden="true">
+    <div class="hystmodal__wrap hystmodal__wrap--login">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+
+        <div class="login">
+          <button data-hystclose class="login__close-button">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <h2>Log In</h2>
+          <form class="login__form" action="#" method="post">
+
+            <div class="login__input-wrapper">
+              <label for="useremail">
+                <input type="email" id="useremail" name="useremail" placeholder="Your E-mail"
+                  aria-label="Input your e-mail" required autofocus>
+              </label>
+            </div>
+
+            <div class="login__input-wrapper">
+              <label for="userpassword">
+                <input type="password" id="userpassword" name="userpassword" placeholder="Password"
+                  aria-label="Input your password" required>
+              </label>
+            </div>
+
+            <a href="#" class="login__pass-restore-link">Forgot your password?</a>
+
+            <button class="login__button" type="submit">Log In</button>
+          </form>
+
+          <a class="login__signup-link" href="#"> Don’t have an account?<span>&nbsp;&nbsp;Sign up</span></a>
+        </div>
+      </div>
+    </div>
   </div>
+
   <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>
 </body>

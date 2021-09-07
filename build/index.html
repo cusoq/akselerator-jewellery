@@ -5,8 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jewellery store</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/poppins-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramond-italic-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramond-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramond-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta name="description" content="Jewellery store.">
+  <title>Jewellery store</title>
 </head>
 
 <body>
@@ -39,7 +46,7 @@
         </a>
 
         <div class="header__user-bar user-bar">
-          <a class="user-bar__item user-bar__login-link user-bar__login-link-js" href="login.html">Login</a>
+          <a class="user-bar__item user-bar__login-link login-link-js" href="login.html" data-hystmodal="#loginModal">Login</a>
 
           <a class="user-bar__item user-bar__cart-link" href="#" data-hystmodal="#myModal2">
             <div>
@@ -83,7 +90,7 @@
             <a href="#">Contact Us</a>
           </li>
           <li class="navigation__expanded-list-item navigation__expanded-list-item--login login-link-js">
-            <a href="login.html" target="_blank">Login</a>
+            <a class="login-link-js" href="login.html" target="_blank">Login</a>
           </li>
         </ul>
       </nav>
@@ -309,29 +316,21 @@
           </div>
 
           <div class="slider-pagination"></div>
-          <!--!!!-->
-
           <div class="slider-mobile-pagination">
             <span class="slider-mobile-pagination__current">current</span>
-            <!--!!!-->
             &nbsp;of&nbsp;
             <span class="slider-mobile-pagination__total">total</span>
-            <!--!!!-->
           </div>
 
           <div class="slider-buttons">
             <button class="slider-buttons__item slider-buttons__item--prev" aria-label="Previous">
-              <!-- <svg width="37" height="17" role="img">
-                <use xlink:href="#arrow-left"></use>
-              </svg> -->
+
               <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
               </svg>
             </button>
             <button class="slider-buttons__item slider-buttons__item--next" aria-label="Next">
-              <!-- <svg width="37" height="17" role="img">
-                <use xlink:href="#arrow-right"></use>
-              </svg> -->
+
               <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
               </svg>
@@ -477,7 +476,6 @@
             </div>
           </dd>
         </dl>
-
       </div>
     </section>
     <section class="gallery">
@@ -690,7 +688,6 @@
             </svg>
           </div>
 
-
           <a class="modal-menu__cart" href="#" data-hystmodal="#myModal2">
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
@@ -736,10 +733,46 @@
               <a href="#">Contact Us</a>
             </li>
             <li class="navigation__expanded-list-item navigation__expanded-list-item--login login-link-js">
-              <a href="login.html" target="_blank">Login</a>
+              <a href="login.html" target="_blank" data-hystmodal="#loginModal">Login</a>
             </li>
           </ul>
         </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="hystmodal" id="loginModal" aria-hidden="true">
+    <div class="hystmodal__wrap hystmodal__wrap--login">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+
+        <div class="login">
+          <button data-hystclose="" class="login__close-button">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <h2>Log In</h2>
+          <form class="login__form" action="#" method="post">
+
+            <div class="login__input-wrapper">
+              <label for="useremail">
+                <input type="email" id="useremail" name="useremail" placeholder="Your E-mail" aria-label="Input your e-mail" required="">
+              </label>
+            </div>
+
+            <div class="login__input-wrapper">
+              <label for="userpassword">
+                <input type="password" id="userpassword" name="userpassword" placeholder="Password" aria-label="Input your password" required="">
+              </label>
+            </div>
+
+            <a href="#" class="login__pass-restore-link">Forgot your password?</a>
+
+            <button class="login__button" type="submit">Log In</button>
+          </form>
+
+          <a class="login__signup-link" href="#"> Don’t have an account?<span>&nbsp;&nbsp;Sign up</span></a>
+        </div>
       </div>
     </div>
   </div>

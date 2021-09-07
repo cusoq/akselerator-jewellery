@@ -133,7 +133,7 @@
           key: "focusControl",
           value: function () {
               var e = this.openedWindow.querySelectorAll(this._focusElements);
-              this.isOpened && this.starter ? this.starter.focus() : e.length && e[0].focus()
+              this.isOpened && this.starter ? this.starter.focus() : e.length && e[1].focus()
           }
       }, {
           key: "focusCatcher",
@@ -142,8 +142,8 @@
                   n = Array.prototype.slice.call(t);
               if (this.openedWindow.contains(document.activeElement)) {
                   var i = n.indexOf(document.activeElement);
-                  console.log(i), e.shiftKey && 0 === i && (n[n.length - 1].focus(), e.preventDefault()), e.shiftKey || i !== n.length - 1 || (n[0].focus(), e.preventDefault())
-              } else n[0].focus(), e.preventDefault()
+                  console.log(i), e.shiftKey && 0 === i && (n[n.length - 1].focus(), e.preventDefault()), e.shiftKey || i !== n.length - 1 || (n[1].focus(), e.preventDefault())
+              } else n[1].focus(), e.preventDefault()
           }
       }, {
           key: "_bodyScrollControl",
@@ -210,6 +210,16 @@ const myModal = new HystModal({
 });
 
 const filterModal = new HystModal({
+  backscroll: true,
+            linkAttributeName: 'data-hystmodal',
+            closeOnOverlay: true,
+            closeOnEsc: true,
+            closeOnButton: true,
+            waitTransitions: false,
+            catchFocus: true,
+});
+
+const loginModal = new HystModal({
   backscroll: true,
             linkAttributeName: 'data-hystmodal',
             closeOnOverlay: true,
