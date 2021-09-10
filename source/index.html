@@ -24,22 +24,22 @@
     <div class="centering-container">
       <div class="header__header-content">
 
-
         <button class="header__burger" data-hystmodal="#myModal">
           <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
           </svg>
         </button>
 
-
-        <form class="header__search search" action="#" method="post">
-          <label for="search">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
-            </svg>
-          </label>
-          <input type="search" name="search" id="search" placeholder="Type here to search">
-        </form>
+        <div class="header__search search">
+          <form action="#" method="post">
+            <label for="search">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+            </label>
+            <input type="search" name="search" id="search" placeholder="Type here to search">
+          </form>
+        </div>
 
 
         <a class="header__logo header__logo--menu">
@@ -406,21 +406,21 @@
             <div class="blog__content">
               <time datetime="2019-09-30">September 30, 2019</time>
               <h3>How to care for your jewellery</h3>
-              <a href="">Read Article</a>
+              <a href="#">Read Article</a>
             </div>
           </li>
           <li class="blog__item blog__item--2">
             <div class="blog__content">
               <time datetime="2019-09-23">September 23, 2019</time>
               <h3>Power of<br> crystals</h3>
-              <a href="">Read Article</a>
+              <a href="#">Read Article</a>
             </div>
           </li>
           <li class="blog__item blog__item--3">
             <div class="blog__content blog__content--3">
               <time datetime="2019-09-16">September 16, 2019</time>
               <h3>AW 19 trends</h3>
-              <a href="">Read Article</a>
+              <a href="#">Read Article</a>
             </div>
           </li>
         </ul>
@@ -648,7 +648,7 @@
         <p>
           News and updates from CH. No spam, we promise.
         </p>
-        <form class="mailing__form" action="#" method="POST">
+        <form action="#" method="POST">
           <label for="usermail">
             <input type="email" name="usermail" id="usermail" placeholder="Your E-mail" required>
           </label>
@@ -762,14 +762,17 @@
           </a>
         </div>
 
-        <form class="modal-menu__search search" action="#" method="post">
-          <label for="search-modal">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
-            </svg>
-          </label>
-          <input type="search" name="search" id="search-modal" placeholder="Type here to search">
-        </form>
+        <div class="modal-menu__search search">
+          <form action="#" method="post">
+            <label for="search-modal">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+            </label>
+            <input type="search" name="search" id="search-modal" placeholder="Type here to search">
+          </form>
+        </div>
+
         <nav class="modal-menu__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__list-item">
@@ -819,7 +822,7 @@
             </svg>
           </button>
           <h2>Log In</h2>
-          <form class="login__form" action="#" method="post">
+          <form id="login-form" action="#" method="post">
 
             <div class="login__input-wrapper">
               <label for="useremail">
@@ -837,7 +840,7 @@
 
             <a href="#" class="login__pass-restore-link">Forgot your password?</a>
 
-            <button class="login__button" type="submit">Log In</button>
+            <a href="#" class="login__button">Log In</a>
           </form>
 
           <a class="login__signup-link" href="#"> Don’t have an account?<span>&nbsp;&nbsp;Sign up</span></a>
@@ -847,7 +850,7 @@
   </div>
 
   <script src="js/vendor.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

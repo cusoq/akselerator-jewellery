@@ -29,14 +29,16 @@
         </button>
 
 
-        <form class="header__search search" action="#" method="post">
-          <label for="search">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
-            </svg>
-          </label>
-          <input type="search" name="search" id="search" placeholder="Type here to search">
-        </form>
+        <div class="header__search search">
+          <form action="#" method="post">
+            <label for="search">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+            </label>
+            <input type="search" name="search" id="search" placeholder="Type here to search">
+          </form>
+        </div>
 
 
         <a class="header__logo header__logo--menu" href="index.html">
@@ -683,7 +685,7 @@
         <p>
           News and updates from CH. No spam, we promise.
         </p>
-        <form class="mailing__form" action="#" method="POST">
+        <form action="#" method="POST">
           <label for="usermail">
             <input type="email" name="usermail" id="usermail" placeholder="Your E-mail" required="">
           </label>
@@ -798,14 +800,16 @@
           </a>
         </div>
 
-        <form class="modal-menu__search search" action="#" method="post">
-          <label for="search-modal">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
-            </svg>
-          </label>
-          <input type="search" name="search" id="search-modal" placeholder="Type here to search">
-        </form>
+        <div class="modal-menu__search search">
+          <form action="#" method="post">
+            <label for="search-modal">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+            </label>
+            <input type="search" name="search" id="search-modal" placeholder="Type here to search">
+          </form>
+        </div>
         <nav class="modal-menu__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__list-item">
@@ -854,141 +858,143 @@
               <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
             </svg>
           </button>
-          <form class="filter__form filter__form--modal" action="#" method="POST">
+          <form action="#" method="POST">
+            <div class="filter__form filter__form--modal">
+              <fieldset class="filter__field-wrapper">
+                <button class="filter__field-toggle" type="button">
+                  <span>
+                    Product
+                  </span>
+                  <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
 
-            <fieldset class="filter__field-wrapper">
-              <button class="filter__field-toggle" type="button">
-                <span>
-                  Product
-                </span>
-                <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
-                </svg>
-              </button>
+                <div class="filter__field">
+                  <div class="filter__input-wrapper">
+                    <input type="checkbox" class="visually-hidden" id="necklaces-modal" name="necklaces" checked="">
 
-              <div class="filter__field">
-                <div class="filter__input-wrapper">
-                  <input type="checkbox" class="visually-hidden" id="necklaces-modal" name="necklaces" checked="">
+                    <label class="filter__input-description" for="necklaces-modal">Necklaces</label>
+                  </div>
 
-                  <label class="filter__input-description" for="necklaces-modal">Necklaces</label>
-                </div>
+                  <div class="filter__input-wrapper">
+                    <input type="checkbox" class="visually-hidden" id="chokers-modal" name="chokers" checked="">
 
-                <div class="filter__input-wrapper">
-                  <input type="checkbox" class="visually-hidden" id="chokers-modal" name="chokers" checked="">
+                    <label class="filter__input-description" for="chokers-modal">Chokers</label>
+                  </div>
 
-                  <label class="filter__input-description" for="chokers-modal">Chokers</label>
-                </div>
+                  <div class="filter__input-wrapper">
+                    <input type="checkbox" class="visually-hidden" id="rings-modal" name="rings">
 
-                <div class="filter__input-wrapper">
-                  <input type="checkbox" class="visually-hidden" id="rings-modal" name="rings">
+                    <label class="filter__input-description" for="rings-modal">Rings</label>
+                  </div>
 
-                  <label class="filter__input-description" for="rings-modal">Rings</label>
-                </div>
+                  <div class="filter__input-wrapper">
+                    <input type="checkbox" class="visually-hidden" id="earrings-modal" name="earrings" checked="">
 
-                <div class="filter__input-wrapper">
-                  <input type="checkbox" class="visually-hidden" id="earrings-modal" name="earrings" checked="">
-
-                  <label class="filter__input-description" for="earrings-modal">Earrings</label>
-                </div>
-
-              </div>
-            </fieldset>
-
-            <fieldset class="filter__field-wrapper">
-              <button class="filter__field-toggle" type="button">
-                <span>
-                  Material
-                </span>
-                <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
-                </svg>
-              </button>
-
-              <div class="filter__field">
-                <div class="filter__input-wrapper">
-                  <input type="checkbox" class="visually-hidden" id="gold-modal" name="gold">
-
-                  <label class="filter__input-description" for="gold-modal">Gold</label>
-
-                </div>
-
-                <div class="filter__input-wrapper">
-                  <input type="checkbox" class="visually-hidden" id="silver-modal" name="silver">
-
-                  <label class="filter__input-description" for="silver-modal">Silver</label>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="filter__field-wrapper">
-              <button class="filter__field-toggle" type="button">
-                <span>
-                  Collection
-                </span>
-                <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
-                </svg>
-              </button>
-
-              <div class="filter__field">
-
-                <div class="filter__input-wrapper">
-                  <input type="checkbox" class="visually-hidden" id="flamingo-modal" name="flamingo">
-
-                  <label class="filter__input-description" for="flamingo-modal">Pink flamingo</label>
-                </div>
-
-                <div class="filter__input-wrapper">
-                  <input type="checkbox" class="visually-hidden" id="dreams-modal" name="dreams">
-
-                  <label class="filter__input-description" for="dreams-modal">Dreams</label>
-                </div>
-
-              </div>
-            </fieldset>
-
-            <fieldset class="filter__field-wrapper">
-              <button class="filter__field-toggle" type="button">
-                <span>
-                  Price
-                </span>
-                <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
-                </svg>
-              </button>
-
-              <div class="filter__field">
-                <div class="filter__price-slider price-slider">
-
-
-                  <div class="price-slider__progress">
-                    <div class="price-slider__pin">
-
-                      <div class="price-slider__input-container price-slider__input-container--min">
-
-                        <label class="price-slider__input-description" for="low-value-modal">&#36;
-                        </label>
-                        <input type="text" name="low-price" id="low-value-modal" value="55">
-                      </div>
-                    </div>
-                    <div class="price-slider__pin">
-                      <div class="price-slider__input-container price-slider__input-container--max">
-                        <label class="price-slider__input-description" for="top-value-modal">&#36;
-                        </label>
-                        <input type="text" name="top-price" id="top-value-modal" value="155">
-                      </div>
-
-                    </div>
+                    <label class="filter__input-description" for="earrings-modal">Earrings</label>
                   </div>
 
                 </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <div class="filter__buttons">
-              <button class="filter__button filter__button--submit" type="submit">Apply</button>
-              <button class="filter__button filter__button--reset" type="reset">Clear All</button>
+              <fieldset class="filter__field-wrapper">
+                <button class="filter__field-toggle" type="button">
+                  <span>
+                    Material
+                  </span>
+                  <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+
+                <div class="filter__field">
+                  <div class="filter__input-wrapper">
+                    <input type="checkbox" class="visually-hidden" id="gold-modal" name="gold">
+
+                    <label class="filter__input-description" for="gold-modal">Gold</label>
+
+                  </div>
+
+                  <div class="filter__input-wrapper">
+                    <input type="checkbox" class="visually-hidden" id="silver-modal" name="silver">
+
+                    <label class="filter__input-description" for="silver-modal">Silver</label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter__field-wrapper">
+                <button class="filter__field-toggle" type="button">
+                  <span>
+                    Collection
+                  </span>
+                  <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+
+                <div class="filter__field">
+
+                  <div class="filter__input-wrapper">
+                    <input type="checkbox" class="visually-hidden" id="flamingo-modal" name="flamingo">
+
+                    <label class="filter__input-description" for="flamingo-modal">Pink flamingo</label>
+                  </div>
+
+                  <div class="filter__input-wrapper">
+                    <input type="checkbox" class="visually-hidden" id="dreams-modal" name="dreams">
+
+                    <label class="filter__input-description" for="dreams-modal">Dreams</label>
+                  </div>
+
+                </div>
+              </fieldset>
+
+              <fieldset class="filter__field-wrapper">
+                <button class="filter__field-toggle" type="button">
+                  <span>
+                    Price
+                  </span>
+                  <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+
+                <div class="filter__field">
+                  <div class="filter__price-slider price-slider">
+
+
+                    <div class="price-slider__progress">
+                      <div class="price-slider__pin">
+
+                        <div class="price-slider__input-container price-slider__input-container--min">
+
+                          <label class="price-slider__input-description" for="low-value-modal">&#36;
+                          </label>
+                          <input type="text" name="low-price" id="low-value-modal" value="55">
+                        </div>
+                      </div>
+                      <div class="price-slider__pin">
+                        <div class="price-slider__input-container price-slider__input-container--max">
+                          <label class="price-slider__input-description" for="top-value-modal">&#36;
+                          </label>
+                          <input type="text" name="top-price" id="top-value-modal" value="155">
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="filter__buttons">
+                <button class="filter__button filter__button--submit" type="submit">Apply</button>
+                <button class="filter__button filter__button--reset" type="reset">Clear All</button>
+              </div>
             </div>
+
           </form>
         </div>
       </div>
@@ -1006,7 +1012,7 @@
             </svg>
           </button>
           <h2>Log In</h2>
-          <form class="login__form" action="#" method="post">
+          <form id="login-form" action="#" method="post">
 
             <div class="login__input-wrapper">
               <label for="useremail">
@@ -1022,7 +1028,7 @@
 
             <a href="#" class="login__pass-restore-link">Forgot your password?</a>
 
-            <button class="login__button" type="submit">Log In</button>
+            <a href="#" class="login__button">Log In</a>
           </form>
 
           <a class="login__signup-link" href="#"> Don’t have an account?<span>&nbsp;&nbsp;Sign up</span></a>
@@ -1032,7 +1038,7 @@
   </div>
 
   <script src="js/vendor.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

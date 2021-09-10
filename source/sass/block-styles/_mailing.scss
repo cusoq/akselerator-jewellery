@@ -43,7 +43,7 @@
   }
 }
 
-.mailing__form {
+.mailing form {
   border-bottom: 1px solid #ffffff;
   display: flex;
   justify-content: space-between;
@@ -51,13 +51,13 @@
   min-height: 37px;
 }
 
-.mailing__form input {
+.mailing input {
   @include hover-focus-activity();
   background-color: transparent;
   border: none;
 }
 
-.mailing__form input::placeholder {
+.mailing input::placeholder {
   font-size: 14px;
   line-height: 21px;
   color: #9b9997;

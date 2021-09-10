@@ -2,20 +2,21 @@
 var headerBurger = document.querySelector('.header__burger');
 var headerNavigation = document.querySelector('.navigation');
 var headerSearch = document.querySelector('.search');
-var formBlock = document.querySelector('.login__form');
+var formBlock = document.getElementById('login-form');
 var emailInput = formBlock.querySelector('input[type=email]');
 var storage = '';
 var isStorageSupport = true;
 
+var isJsBlock = function () {
+  headerBurger.classList.add('header__burger--js');
+  headerNavigation.classList.add('navigation--js');
+  headerSearch.classList.add('search--js');
+};
+
 if (headerBurger || headerNavigation || headerSearch) {
-  var isJsBlock = function () {
-    headerBurger.classList.add('header__burger--js');
-    headerNavigation.classList.add('navigation--js');
-    headerSearch.classList.add('search--js');
-  };
+  isJsBlock();
 }
 
-isJsBlock();
 
 // запись в localStorage
 var setStorage = function (inputEl) {
