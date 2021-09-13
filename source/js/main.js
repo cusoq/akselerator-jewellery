@@ -7,7 +7,7 @@ var emailInput = formBlock.querySelector('input[type=email]');
 var storage = '';
 var isStorageSupport = true;
 
-if (headerBurger || headerNavigation || headerSearch) {
+if (headerBurger && headerNavigation && headerSearch) {
   var isJsBlock = function () {
     headerBurger.classList.add('header__burger--js');
     headerNavigation.classList.add('navigation--js');

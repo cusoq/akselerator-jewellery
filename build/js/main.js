@@ -7,16 +7,15 @@ var emailInput = formBlock.querySelector('input[type=email]');
 var storage = '';
 var isStorageSupport = true;
 
-var isJsBlock = function () {
-  headerBurger.classList.add('header__burger--js');
-  headerNavigation.classList.add('navigation--js');
-  headerSearch.classList.add('search--js');
-};
-
-if (headerBurger || headerNavigation || headerSearch) {
-  isJsBlock();
+if (headerBurger && headerNavigation && headerSearch) {
+  var isJsBlock = function () {
+    headerBurger.classList.add('header__burger--js');
+    headerNavigation.classList.add('navigation--js');
+    headerSearch.classList.add('search--js');
+  };
 }
 
+isJsBlock();
 
 // запись в localStorage
 var setStorage = function (inputEl) {
