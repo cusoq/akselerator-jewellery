@@ -39,10 +39,10 @@ var setValues = function () {
   }
 };
 
+setStorage(emailInput);
 
 var onSubmit = function () {
   checkStorageSupport();
-  setStorage(emailInput);
   setValues();
 };
 
