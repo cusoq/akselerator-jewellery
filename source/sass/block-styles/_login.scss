@@ -119,9 +119,9 @@
   line-height: 40px;
   padding: 0 10px;
 
-  &:invalid {
-    color: #ff0000;
-  }
+  // &:invalid {
+  //   color: #ff0000;
+  // }
 }
 
 .login input::placeholder {
@@ -133,8 +133,8 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  text-align: right;
-  width: 100%;
+  width: auto;
+  margin-left: auto;
   color: #9b9997;
 }
 

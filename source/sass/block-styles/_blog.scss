@@ -54,19 +54,19 @@
   @include list-reset();
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 300px 300px;
+  grid-template-rows: auto auto;
   column-gap: 30px;
   row-gap: 30px;
 
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: auto auto auto;
     row-gap: 50px;
   }
 
   @media (max-width: 727px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 512px 512px 512px;
+    max-width: 400px;
+    margin: 0 auto;
     row-gap: 40px;
   }
 }
@@ -77,9 +77,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-height: 300px;
 
   @media (max-width: 727px) {
     flex-direction: column;
+    min-height: 300px;
+  }
+
+  @media (max-width: 727px) {
+    min-height: 512px;
   }
 }
 

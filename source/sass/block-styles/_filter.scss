@@ -33,7 +33,7 @@
   border: none;
   background-color: #ffffff;
   outline: 1px solid #a87b62;
-  padding: 5px 15px 0 15px;
+  padding: 5px 15px 4px 15px;
 
   @media (max-width: 1023px) {
     padding: 17px 38px 10px 15px;
@@ -53,6 +53,7 @@
 }
 
 .filter__field-toggle {
+  @include hover-focus-activity();
   font-weight: 500;
   font-size: 16px;
   color: #1d1613;
@@ -169,12 +170,14 @@
   }
 }
 
-.filter__field input[type="checkbox"]:hover {
+.filter__field input[type="checkbox"]:hover,
+.filter__field input[type="checkbox"]:focus {
   opacity: 0.5;
   cursor: pointer;
 }
 
-.filter__field input[type="checkbox"]:hover + .filter__input-description {
+.filter__field input[type="checkbox"]:hover + .filter__input-description,
+.filter__field input[type="checkbox"]:focus + .filter__input-description {
   opacity: 0.5;
   cursor: pointer;
 }

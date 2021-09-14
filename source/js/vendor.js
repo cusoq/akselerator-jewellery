@@ -88,7 +88,7 @@
       return t = e, (n = [{
           key: "init",
           value: function () {
-              this.isOpened = !1, this.openedWindow = !1, this.starter = !1, this._nextWindows = !1, this._scrollPosition = 0, this._reopenTrigger = !1, this._overlayChecker = !1, this._isMoved = !1, this._focusElements = ["a[href]", "area[href]", 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', "select:not([disabled]):not([aria-hidden])", "textarea:not([disabled]):not([aria-hidden])", "button:not([disabled]):not([aria-hidden])", "iframe", "object", "embed", "[contenteditable]", '[tabindex]:not([tabindex^="-"])'], this._modalBlock = !1, e._shadow || (e._shadow = document.createElement("button"), e._shadow.classList.add("hystmodal__shadow"), document.body.appendChild(e._shadow)), this.eventsFeeler()
+              this.isOpened = !1, this.openedWindow = !1, this.starter = !1, this._nextWindows = !1, this._scrollPosition = 0, this._reopenTrigger = !1, this._overlayChecker = !1, this._isMoved = !1, this._focusElements = ["a[href]", "area[href]", 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', "select:not([disabled]):not([aria-hidden])", "textarea:not([disabled]):not([aria-hidden])", "button:not([disabled]):not([aria-hidden])", "iframe", "object", "embed", "[contenteditable]", '[tabindex]:not([tabindex^="-"])'], this._modalBlock = !1, e._shadow || (e._shadow = document.createElement("button"), e._shadow.classList.add("hystmodal__shadow"), e._shadow.setAttribute("aria-label", "modal button"), document.body.appendChild(e._shadow)), this.eventsFeeler()
           }
       }, {
           key: "eventsFeeler",
@@ -142,7 +142,7 @@
                   n = Array.prototype.slice.call(t);
               if (this.openedWindow.contains(document.activeElement)) {
                   var i = n.indexOf(document.activeElement);
-                  console.log(i), e.shiftKey && 0 === i && (n[n.length - 1].focus(), e.preventDefault()), e.shiftKey || i !== n.length - 1 || (n[1].focus(), e.preventDefault())
+                  console.log(i), e.shiftKey && 0 === i && (n[n.length - 1].focus(), e.preventDefault()), e.shiftKey || i !== n.length - 1 || (n[0].focus(), e.preventDefault())
               } else n[1].focus(), e.preventDefault()
           }
       }, {
@@ -4903,7 +4903,7 @@ const loginModal = new HystModal({
         el: document.querySelector('.slider-pagination'),
         clickable: 'true',
         renderBullet(index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
+          return '<span class="' + className + '" aria-label="pagination">' + (index + 1) + '</span>';
         },
       },
 
@@ -4913,26 +4913,14 @@ const loginModal = new HystModal({
       },
 
       breakpoints: {
-        320: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-        },
-        425: {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-        },
-        727: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-        },
-        1023: {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-        },
-        1169: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
-        },
+        // 320: {
+        //   slidesPerView: 2,
+        //   slidesPerGroup: 2,
+        // },
+        // 425: {
+        //   slidesPerView: 3,
+        //   slidesPerGroup: 3,
+        // },
         // 727: {
         //   slidesPerView: 2,
         //   slidesPerGroup: 2,
@@ -4941,6 +4929,18 @@ const loginModal = new HystModal({
         //   slidesPerView: 3,
         //   slidesPerGroup: 3,
         // },
+        // 1169: {
+        //   slidesPerView: 4,
+        //   slidesPerGroup: 4,
+        // },
+        727: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        1023: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
         // 1169: {
         //   slidesPerView: 4,
         //   slidesPerGroup: 4,

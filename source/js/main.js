@@ -40,10 +40,11 @@ var setValues = function () {
 };
 
 
-var onChangeInputValue = function () {
+var onSubmit = function () {
   checkStorageSupport();
   setStorage(emailInput);
   setValues();
 };
 
-emailInput.addEventListener('change', onChangeInputValue);
+// emailInput.addEventListener('submit', onChangeInputValue);
+formBlock.addEventListener('submit', onSubmit);

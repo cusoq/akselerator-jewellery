@@ -48,10 +48,16 @@
   border: none;
   width: 100%;
   background-color: transparent;
+  color: #9b979a;
 
   @media (max-width: 1023px) {
     line-height: 1;
   }
+}
+
+.search--modal input {
+  padding: 12px 10px 12px 35px;
+  color: #ffffff;
 }
 
 .search input::placeholder {
