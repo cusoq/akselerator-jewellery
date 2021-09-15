@@ -23,6 +23,7 @@ var setStorage = function (inputEl) {
     inputEl.value = storage;
   }
 };
+setStorage(emailInput);
 
 // проверка поддержки localStorage
 var checkStorageSupport = function () {
@@ -39,12 +40,10 @@ var setValues = function () {
   }
 };
 
-setStorage(emailInput);
 
 var onSubmit = function () {
   checkStorageSupport();
   setValues();
 };
 
-// emailInput.addEventListener('submit', onChangeInputValue);
 formBlock.addEventListener('submit', onSubmit);
