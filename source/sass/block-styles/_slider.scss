@@ -31,20 +31,15 @@
 
 .slider__item img {
   max-width: 100%;
-  height: 284px;
+  height: auto;
   margin-bottom: 17px;
   object-fit: cover;
 
   @media (max-width: 1023px) {
-    max-width: 100%;
-
-    width: 324px;
-    height: 340px;
+    width: 100%;
   }
 
   @media (max-width: 727px) {
-    width: 100%;
-    height: auto;
     margin-bottom: 12px;
   }
 }
